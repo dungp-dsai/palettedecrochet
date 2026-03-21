@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#6c574f",
+              "on-tertiary-container": "#65625f",
+              "outline": "#797b7b",
+              "surface-container-high": "#e8e8e8",
+              "tertiary": "#625e5c",
+              "surface-container": "#eeeeee",
+              "secondary-fixed-dim": "#ebcec4",
+              "on-tertiary-fixed-variant": "#706c69",
+              "secondary-dim": "#634e47",
+              "on-background": "#313333",
+              "error-dim": "#791903",
+              "on-primary": "#fff7f6",
+              "background": "#fbf9f9",
+              "surface-bright": "#fbf9f9",
+              "primary": "#8c4d4e",
+              "on-secondary-container": "#624d45",
+              "primary-container": "#faa9a9",
+              "on-error": "#fff7f6",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#6b3233",
+              "secondary-container": "#fadcd2",
+              "primary-fixed": "#faa9a9",
+              "on-error-container": "#6e1400",
+              "inverse-on-surface": "#9d9d9d",
+              "error": "#a73b21",
+              "surface-dim": "#d9dada",
+              "surface-container-highest": "#e2e2e3",
+              "on-tertiary": "#fef8f4",
+              "on-surface-variant": "#5d5f60",
+              "error-container": "#fd795a",
+              "on-surface": "#313333",
+              "on-secondary": "#fff7f5",
+              "primary-dim": "#7e4142",
+              "surface-container-low": "#f4f3f3",
+              "tertiary-fixed-dim": "#f5f0ec",
+              "on-primary-container": "#60292b",
+              "tertiary-dim": "#555350",
+              "on-secondary-fixed": "#4e3b34",
+              "on-tertiary-fixed": "#52504d",
+              "on-primary-fixed": "#461517",
+              "surface-tint": "#8c4d4e",
+              "tertiary-fixed": "#ffffff",
+              "inverse-primary": "#faa9a9",
+              "primary-fixed-dim": "#ea9c9c",
+              "inverse-surface": "#0d0e0f",
+              "surface": "#fbf9f9",
+              "surface-variant": "#e2e2e3",
+              "secondary-fixed": "#fadcd2",
+              "secondary": "#705a52",
+              "outline-variant": "#b1b2b2",
+              "tertiary-container": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(140, 77, 78, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f9]/70 backdrop-blur-md shadow-[0_20px_40px_rgba(140,77,78,0.06)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<span class="text-2xl font-bold text-primary font-headline">Velvet Stitch</span>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-primary border-b-2 border-primary pb-1 font-headline font-medium transition-all duration-300" href="#">Gallery</a>
+<a class="text-on-surface opacity-80 hover:text-primary hover:opacity-100 transition-all duration-300 font-headline font-medium" href="#">Story</a>
+<a class="text-on-surface opacity-80 hover:text-primary hover:opacity-100 transition-all duration-300 font-headline font-medium" href="#">Collection</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-primary hover:scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-20 mb-20">
+<div class="absolute inset-0 bg-gradient-to-r from-secondary-container/30 to-transparent z-0"></div>
+<div class="grid md:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto z-10">
+<div class="space-y-8">
+<h1 class="text-5xl md:text-7xl font-headline leading-tight text-on-surface">
+                        Sugar, Spice, &amp; <br/><span class="italic text-primary">Crochet Nice</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed">
+                        A nostalgic tribute to the Townsville heroes. Hand-hooked masterpieces that blend childhood icons with high-end editorial aesthetics.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-medium hover:opacity-90 transition-all editorial-shadow">
+                            Shop The Trio
+                        </button>
+<button class="text-primary px-8 py-4 rounded-full font-medium border border-outline-variant hover:bg-surface-container-low transition-all">
+                            View Collection
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden editorial-shadow transform rotate-2 group-hover:rotate-0 transition-transform duration-700">
+<img alt="Powerpuff Girls Crochet" class="w-full h-full object-cover" data-alt="High-quality handcrafted crochet dolls of Blossom, Bubbles, and Buttercup arranged artistically" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEqERrCHrsr_hmvtR7KT7GmA5XWFZsNDU-91xzTb5VKuF7h7mWr1izkimQoZRV7EE-A3WQcylsJMwgSlf4EGnRU1Iem1-ra7FMkJmfRM3gB5PoQno9qP9AKN6_ZGNuw3XCBqNvNzyZiX8Z94jDZ44YO1aThkQ2lgmo9G_yeJkIqd6Nhap3hN-kktGEPbKVqx8vezq6nIYSAWRF-vXD3d3qm8-RKKlZzRBdzdup-8EhbXHT3qv063vH8lzRo_39Xi4pYgj0-ZI34A"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Featured Collections - Asymmetric Layout -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<span class="text-xs uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Curated Series</span>
+<h2 class="text-4xl md:text-5xl font-headline text-on-surface">The Townsville Trio</h2>
+</div>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Limited Edition 2024</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- The Townsville Trio -->
+<div class="md:col-span-7 group">
+<div class="bg-secondary-container rounded-lg p-12 relative overflow-hidden h-[500px] flex flex-col justify-end">
+<div class="absolute top-0 right-0 w-2/3 h-full p-8 transition-transform duration-700 group-hover:scale-105">
+<img alt="Powerpuff Crochet textures" class="w-full h-full object-cover rounded-lg editorial-shadow" data-alt="Vibrant pink, blue and green yarn textures in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-wkRYV8puDI7wCcA3viKTlCNAzMfogkzTwgbGU_cpEpqaUtLKCYHAKnQqqmEpNZcOdk0Lf4IcXCR8Iq9DYIX5uJsz5xplrfjhfnIW0E7GAJAwW5vII945arC2YBauIDPDt9r7wieobOjkRg2diQGR25TiR_aqulz1PzmDeCr7QHAWzOM1haN5HibFLJdq5PC6huW9fp5wXhCWSyUGZqXPKlqGzoXVlDkcBlYzD63qORwxn0g7YSiJW0L0vYj9cEgqocUm80TaXw"/>
+</div>
+<div class="relative z-10 max-w-xs">
+<h3 class="text-3xl font-headline mb-4">Chemical X Edit</h3>
+<p class="text-on-secondary-container mb-6 opacity-90">A whimsical journey through the vibrant hues of Blossom, Bubbles, and Buttercup.</p>
+<button class="text-on-secondary-container font-semibold flex items-center gap-2 group/btn">
+                                    View Series <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Mojo Jojo's Lab -->
+<div class="md:col-span-5 group mt-12 md:mt-24">
+<div class="bg-surface-container-highest rounded-lg p-8 relative h-[400px] flex flex-col justify-center border-l-8 border-primary/20">
+<div class="mb-6 aspect-square w-32 rounded-full overflow-hidden border-4 border-white editorial-shadow">
+<img alt="Mojo Jojo crochet" class="w-full h-full object-cover" data-alt="Handcrafted miniature crochet Mojo Jojo with a tiny purple cape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-RcGINM8GKMvz2OXnzgvw4NFoRGk1dsQvdRxQEZqrZ2GB5K_gy6ulXaAnwS_bGCh0wcoqIvHUljh3SoajlWguwyTCoZwh22gzuCH2xGRzkAxl4_I-6Ck1C9ewqwdaT3LbBY_T8j7G_a8spAIdOykTAUuPR2tEPvSRSF5qvOR3tFXuImjRMfQAgKFiwieimOan_uldemMHCWSZOo2Sunuq9bez2k5tla9yGs3NOeFYEX5l0sEnyy5qH1mg8URzoDzf1Hd1HNt-rw"/>
+</div>
+<h3 class="text-2xl font-headline mb-3">The Villains Gallery</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Intricate amigurumi of Mojo Jojo and HIM, crafted with soul and precision.</p>
+<button class="underline underline-offset-8 text-primary font-bold hover:text-primary-dim transition-colors">Discover Villains</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Gallery Grid (Bento Style) -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<h2 class="text-center font-headline text-4xl mb-20 italic">Masterpiece Spotlight</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 h-auto md:h-[800px]">
+<div class="md:col-span-2 md:row-span-2 bg-surface-container rounded-lg overflow-hidden group relative">
+<img alt="The Powerpuff Trio Crochet Collection" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Large scale professional crochet Blossom doll with her signature red bow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEqERrCHrsr_hmvtR7KT7GmA5XWFZsNDU-91xzTb5VKuF7h7mWr1izkimQoZRV7EE-A3WQcylsJMwgSlf4EGnRU1Iem1-ra7FMkJmfRM3gB5PoQno9qP9AKN6_ZGNuw3XCBqNvNzyZiX8Z94jDZ44YO1aThkQ2lgmo9G_yeJkIqd6Nhap3hN-kktGEPbKVqx8vezq6nIYSAWRF-vXD3d3qm8-RKKlZzRBdzdup-8EhbXHT3qv063vH8lzRo_39Xi4pYgj0-ZI34A"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-white font-headline text-2xl">The Powerpuff Collection</span>
+</div>
+</div>
+<div class="md:col-span-1 bg-primary-container/10 rounded-lg overflow-hidden group relative">
+<img alt="Mojo Jojo Miniature Crochet" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Macro photo of light blue crochet stitches of Bubbles pigtails" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-RcGINM8GKMvz2OXnzgvw4NFoRGk1dsQvdRxQEZqrZ2GB5K_gy6ulXaAnwS_bGCh0wcoqIvHUljh3SoajlWguwyTCoZwh22gzuCH2xGRzkAxl4_I-6Ck1C9ewqwdaT3LbBY_T8j7G_a8spAIdOykTAUuPR2tEPvSRSF5qvOR3tFXuImjRMfQAgKFiwieimOan_uldemMHCWSZOo2Sunuq9bez2k5tla9yGs3NOeFYEX5l0sEnyy5qH1mg8URzoDzf1Hd1HNt-rw"/>
+</div>
+<div class="md:col-span-1 md:row-span-2 bg-surface-container rounded-lg overflow-hidden group relative">
+<img alt="Buttercup Crochet" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Professional studio shot of the Buttercup crochet doll standing confidently" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD96SbjdzSvSajtdQsuSGcOX41q3iaZVnBNPwB-LuZybRw1QDbu3T4C7la7N8Rj6QeTccKbzUbnvZ5ZeAFOv3O168E9Iq5OSZ6cxCzV2qq0_k1c7kkhiNZuO4jHbZ2eHB2GZLm4hDgoz65FwN_YZBT805iYd-B0DlN_jlKQ8MG7J1YhHDqEjoN4iLv6Z0xPkR8nSrK2PQ-NkrObuMQBxHuPWD3duIkLj7430Bt7G5gKJxsi-DC3HhOW1uzvQg0pFyYnPefpNAboUA"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+<span class="text-white font-headline text-2xl">The Fighter: Buttercup</span>
+</div>
+</div>
+<div class="md:col-span-1 bg-secondary-container/20 rounded-lg overflow-hidden group relative">
+<img alt="Bubbles Doll" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Full body shot of the Bubbles crochet doll with her signature blue dress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAry9lk_PN2uYcCKCoUZ-wgkAnvV5e3uIl8e26UlLgr_9ezh3nUTxIlXUPieCxm4r9TEAKUy7NEPoZOuP_XJ40JDks6NX4tcwip4ONV_l0orEf7HtlP1APVOXuoWETESUwizR3NGpkPR_yGwku7HocJU3cJhKKSsVFUB2R2E5UB8PMLthpKOGkDUcAeJaruw-iopTSlOnN9MKhlMONRvKLyJnj8AYvV9myvupO_joZlYDZZqPBbiPmOGZJYAiArFxo5t_u_WhIQ3g"/>
+</div>
+</div>
+</section>
+<!-- Curator's Statement -->
+<section class="py-24 bg-white">
+<div class="max-w-4xl mx-auto px-8 text-center space-y-10">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="auto_awesome">auto_awesome</span>
+<p class="text-3xl md:text-4xl font-headline leading-relaxed italic">
+                    "We believe pop-culture icons deserve the same tactile elegance as any fine art installation."
+                </p>
+<div class="pt-6">
+<div class="w-16 h-px bg-primary mx-auto mb-6"></div>
+<p class="font-label uppercase tracking-widest text-xs font-bold text-on-surface-variant">The Curator at Velvet Stitch</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 gap-8 max-w-7xl mx-auto">
+<div class="space-y-2">
+<span class="font-headline italic text-lg text-primary">Velvet Stitch</span>
+<p class="font-label text-sm tracking-wide uppercase text-on-surface-variant">© 2024 Velvet Stitch. Hand-hooked in Townsville.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label text-sm tracking-wide uppercase text-on-tertiary-fixed-variant hover:text-primary underline-offset-4 hover:underline transition-colors duration-200" href="#">Terms</a>
+<a class="font-label text-sm tracking-wide uppercase text-on-tertiary-fixed-variant hover:text-primary underline-offset-4 hover:underline transition-colors duration-200" href="#">Privacy</a>
+<a class="font-label text-sm tracking-wide uppercase text-on-tertiary-fixed-variant hover:text-primary underline-offset-4 hover:underline transition-colors duration-200" href="#">Shipping</a>
+<a class="font-label text-sm tracking-wide uppercase text-on-tertiary-fixed-variant hover:text-primary underline-offset-4 hover:underline transition-colors duration-200" href="#">Care Guide</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
+<span class="material-symbols-outlined text-primary" data-icon="shutter_speed">shutter_speed</span>
+<span class="material-symbols-outlined text-primary" data-icon="cloud">cloud</span>
+</div>
+</div>
+</footer>
+</body></html>
